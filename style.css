@@ -104,9 +104,23 @@ p {
 .container {
   margin-top: 50px;
 }
-#pic1,
-#pic2,
-#pic3 {
-  margin: 10px;
-  border-radius: 4px;
+
+@media (max-width: 576px) {
+  #yoga-image,
+  #weather-image,
+  #yogurt-image {
+    display: none;
+  }
+  .card-text,
+  .card-name {
+    text-align: center;
+  }
+  h1 {
+    font-size: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 36px;
+  }
 }
